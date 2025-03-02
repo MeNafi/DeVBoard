@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DevBoard</title>
+    <link rel="Icon Logo" href="assets/logo.png">
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#3751fd13] py-6 poppins-font">
+    <!-- header section -->
+    <header class="w-11/12 lg:w-11/12 lg:container mx-auto bg-white px-6 py-4 rounded-2xl">
+        <nav class="flex flex-col md:flex-row justify-between items-center">
+            <!-- logo section -->
+            <div class="flex items-end">
+                <img class="w-fit" src="assets/logo.png" alt="logo">
+                <h2 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h2>
+            </div>
+
+            <div class="flex items-center gap-9">
+                <div class="bg-[#3751fd13] flex items-center gap-2 p-4 rounded-full">
+                    <img src="assets/checkbox.png" alt="checkbox">
+                    <p id="completed-work" class="text-2xl font-bold">23</p>
+                </div>
+                <img id="theme-btn" class="bg-[#3751fd13] p-3 rounded-full cursor-pointer" src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="w-11/12 lg:w-11/12 lg:container mx-auto mt-5 grid grid-cols-1 md:grid-cols-5 gap-6">
+        
+        <section class="bg-white rounded-2xl md:col-span-4">
+            <!-- discover section -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 m-6">
+                <div class="bg-[#3751fd13] flex gap-5 py-8 pl-8 col-span-1 rounded-xl">
+                    <!-- task section -->
+                    <div class="form-control bg-white p-4 rounded-full">
+                        <img src="assets/checkbox.png" alt="checkbox">
+                    </div>
+    
+                    <!-- text section -->
+                    <div class="">
+                        <p class="text-base font-medium">Task Assigned </p>
+                        <h3 id="task-assigned" class="text-xl font-bold">06</h3>
+                    </div>
+                </div>
+                
+                <!-- discover section -->
+                <div id="swap" class="flex items-center gap-5 md:col-span-2 px-10 py-6 bg-gradient-to-br from-blue-500 via-[#6C7FFA] to-[#9BA8F8] rounded-xl cursor-pointer">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-2xl text-white font-medium  max-w-[297px]">Discover Something New Today!</p>
+                </div>
+                
+                <!-- date section -->
+                <div class="bg-[#3751fd13] flex gap-5 py-8 pl-8 rounded-xl">
+                    
+                    <div class="form-control bg-white p-4 rounded-full">
+                        <img src="assets/calender.png" alt="calender">
+                    </div>
+    
+                    <div class="">
+                        <p id="current-day" class="text-base font-medium"></p>
+                        <h3 id="date" class="text-xl font-bold"></h3>
+                    </div>
+                </div>
+    
+            </div>
+
+            <hr class="border-dashed mt-8 mb-8">
+
+            <!-- card container -->
+            <div class="m-6 grid grid-cols-1 md:grid-cols-3 gap-9">
+
+                <!-- card1 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Gemini</span>
+                    <h3 class="title text-2xl font-medium mt-4 ">Chat your ideas</h3>
+                    <p class="bg-white mt-4 p-4 rounded-lg">Bard is now Gemini. Get help with writing, planning, learning, and more from Google AI.</p>
+
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h3 class="text-base font-medium">21 March 2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Agentic AI </span>
+                    <h3 class="title text-2xl font-medium mt-4 ">Agents are here to help.</h3>
+                    <p class="bg-white mt-4 p-4  rounded-lg">Agentic makes it easy to create and deploy AI that work for you.No PhD required. From finding bugs.</p>
+
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h4 class="text-base font-medium">21 March 2025</h4>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Netflix</span>
+                    <h3 class="text-2xl font-medium mt-4 title">Watch Movies Online</h3>
+                    <p class="bg-white mt-4 p-4 rounded-lg"></p>
+
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h3 class="text-base font-medium">21 March 2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card4 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Google</span>
+                    <h3 class="title text-2xl font-medium mt-4 ">Google API</h3>
+                    <p class="bg-white mt-4 p-4 rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h3 class="text-base font-medium">21 March 2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card5 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Chatgpt.com</span>
+                    <h3 class="title text-2xl font-medium mt-4 ">Chatgpt OpenAI </h3>
+                    <p class="bg-white mt-4 p-4 rounded-lg">A proactive ChatGPT for LINE, solving problems and initiating interactions. Sign up to chat. Sign up or Log in to chat.
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h3 class="text-base font-medium">21 March 2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card6 -->
+                <div class="cards bg-[#3751fd13] p-6 rounded-2xl">
+                    <span class="bg-white px-4 py-2 rounded-lg">Deepseek</span>
+                    <h3 class="title text-2xl font-medium mt-4 ">Use Deepseek R1</h3>
+                    <p class="bg-white mt-4 p-4 rounded-lg">🎉 DeepSeek-R1 is now live and open source, rivaling OpenAI's Model o1. Available on web, app, and API. Click for details.</p>
+
+                    <hr class="border-dashed mt-3 mb-3">
+
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-base text-gray-400">Deadline</p>
+                            <h3 class="text-base font-medium">21 March 2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- active log section -->
+        <section class="bg-white rounded-2xl pt-6">
+            <div class="flex justify-center gap-4 mb-4">
+                <img src="assets/activity.png" alt="">
+                <p class="text-xl font-medium">Activity Log</p>
+            </div>
+            <button id="clear" class="btn btn-primary px-4 block mx-auto ">Clear History</button>
+
+           
+            <!-- history section -->
+            <div id="message" class="mt-6 w-11/12 mx-auto">
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="scripts/mainindex.js"></script>
+  </body>
+</html>
+

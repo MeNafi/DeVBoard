@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DeVBoard-Blog</title>
+    <link rel="Icon Logo" href="assets/logo.png">
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#3751fd13] py-6 poppins-font">
+    
+    <!-- header section part -->
+
+    <header class="w-11/12 lg:w-11/12 lg:container mx-auto bg-white px-6 py-4 rounded-2xl">
+        <nav class="flex flex-col md:flex-row justify-between items-center">
+            
+            <!-- logo section part -->
+
+            <div class="flex items-end">
+                <img class="w-fit" src="assets/logo.png" alt="logo">
+                <h2 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <button id="back-btn" class="btn btn-primary px-4 mx-auto md:mx-1">Back to Desk</button>
+        </nav>
+    </header>
+
+    <!-- question section part-->
+
+    <main class="w-11/12 lg:w-11/12 lg:container mx-auto mt-3">
+        <h3 class="text-3xl text-center font-bold">Blogs</h3>
+       
+        <!-- question 1 part -->
+
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Select elements using method such as getElementById(), getElementsByClassName() and querySelector() for single elements or querySelectorAll() for multiple elements.</p>
+        </div>
+        
+        <!-- question 2 part -->
+
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">The key difference between innerHTML, innerText, and textContent is that innerHTML allows setting or retrieving HTML content, innerText gets or sets text while respecting styles, and textContent retrieves or sets text while ignoring styles and HTML elements.</p>
+        </div>
+        
+        <!-- question 3 part -->
+
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Event delegation is a way to handle events by placing a single event listener on a parent element instead of adding one to each child. When a child element is clicked, the event travels up to the parent, which can detect and handle it. This makes the code faster and works well for elements added later.</p>
+        </div>
+
+        <!-- question 4 part -->
+
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-4: What is event bubbling in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Event bubbling in the DOM means an event starts from the target element and moves up to its parent elements, allowing them to handle it too.</p>
+        </div>
+
+        <!-- question 5 part -->
+
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">To create, add, and remove elements: createElement, appendChild, removeChild, remove.</p>
+        </div>
+    </main>
+    
+    <script src="scripts/goBack.js"></script>
+</body>
+</html>
+
+
